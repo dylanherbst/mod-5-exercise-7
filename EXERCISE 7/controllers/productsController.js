@@ -30,10 +30,10 @@
 //         .then(response => res.status(200).json(response.data))
 //         .catch(error => res.status(500).json({errror: error.message}))
 // }
-const { Product, productList } = require('../libraries/products'); // Correct import
+const { Product, productList } = require('../libraries/products');
 
 const getProducts = (req, res) => {
-    res.json({ productList });
+    res.json(productList); // Send the array directly
 }
 
-module.exports = getProducts; // Correct export
+module.exports = getProducts;

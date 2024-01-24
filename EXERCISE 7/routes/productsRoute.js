@@ -10,6 +10,9 @@ router.get('/list', getProducts); // Use getProducts directly
 
 module.exports = router;
 
+
+
+
    // const getProducts = () => {
     //     fetch('/api/list')
     //         .then(response => response.json())
